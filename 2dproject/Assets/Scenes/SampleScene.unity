@@ -351,6 +351,7 @@ GameObject:
   - component: {fileID: 824064805}
   - component: {fileID: 824064804}
   - component: {fileID: 824064806}
+  - component: {fileID: 824064807}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -440,6 +441,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4181e3142abfc8a41b55f77e289ded5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _MovePlayer: {fileID: 824064807}
+--- !u!114 &824064807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824064803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d562bd18c58ee554ca08142761148617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
