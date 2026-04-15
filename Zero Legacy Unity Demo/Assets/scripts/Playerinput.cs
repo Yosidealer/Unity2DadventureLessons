@@ -19,7 +19,7 @@ public class Playerinput : MonoBehaviour
 
     void Start()
     {
-        GameStart = 1; // start direct (kun je later aanpassen)
+        GameStart = 1; //OUTDATED | NOT IN USE
         rb = GetComponent<Rigidbody2D>(); // get rigitbody
     }
 
@@ -73,7 +73,7 @@ public class Playerinput : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision) // collision with spike, load death scene and reset storytime
     {
         if (collision.gameObject.CompareTag("spike"))
         {

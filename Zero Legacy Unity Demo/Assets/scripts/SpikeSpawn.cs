@@ -17,16 +17,16 @@ public class SpikeSpawner : MonoBehaviour
         SpawnSpike();
     }
 
-    private void SpawnSpike()
+    private void SpawnSpike() // Spawn a spike at a random height within the specified range
     {
         Vector3 spawnPosition = transform.position + new Vector3(0, Random.Range(-_heightRange, _heightRange) * 1.5f); 
         GameObject spike = Instantiate(_spike, spawnPosition, Quaternion.identity);
 
-        Destroy(spike, 30f); // Destroy the spike after 30 seconds to prevent memory leaks
+        Destroy(spike, 30f); // Destroy the spike after 30 seconds
     }
 
     // Update is called once per frame
-    private void Update()
+    private void Update() // Check if it's time to spawn a new spike
     {
         if (_timer > _maxTime)
         {

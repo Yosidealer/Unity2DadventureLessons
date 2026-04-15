@@ -12,14 +12,13 @@ public class BoosterFlame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.LeftArrow)) //if speedboost button is pressed, play particle system and show sprite
         {
-            _particleSystem.Play();
-             //GetComponent<SpriteRenderer>().enabled = true;
+            _particleSystem.Play(); //play particle system
         }
         else
         {
-            GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<SpriteRenderer>().enabled = false; //hide sprite
         }
     }
 }
